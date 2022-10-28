@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #fbc861;
 }
 
 @keyframes App-logo-spin {
@@ -87,11 +87,11 @@
   font-weight: 300px;
 }
 .pagination .page-num:hover {
-  background-color: #5ab1bb;
+  background-color: #fbc861;
   color: #fff;
 }
 .pagination .active {
-  background-color: #5ab1bb;
+  background-color: #fbc861;
 }
 .card {
   display: flex;
@@ -99,7 +99,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: red;
+  background-color: #80808091;
   margin: 1rem 1rem;
   padding: 1rem;
   max-width: 300px;
