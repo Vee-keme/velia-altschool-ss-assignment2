@@ -50,11 +50,11 @@ function Users() {
               alt={res.name.first}
               src={res.picture.medium}
             />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
+              ea?
+            </p>
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
-            ea?
-          </p>
         </div>
       );
     });
