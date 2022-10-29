@@ -5,7 +5,8 @@
 .App-nav-li {
   display: flex;
   justify-content: space-around;
-  background-color: #161b22;
+  /* background-color: #161b22; */
+  background-color: #0d1117;
   padding: 1rem 2rem;
 }
 .App-nav-li li {
@@ -16,29 +17,10 @@
   text-decoration: none;
 }
 .Users {
-  background-color: #161b22;
+  background-color: #0d1117;
+  /* height: 100%; */
 }
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  margin: 100px auto;
-  width: 60%;
-  /* min-height: 70vh; */
-}
-.image {
-  width: 30%;
-  height: 30%;
-  color: #eee;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #9e9e9e;
-  overflow: hidden;
-}
-.image img {
-  display: block;
-  width: 100%;
-}
+
 .pagination {
   list-style: none;
   display: flex;
@@ -47,14 +29,14 @@
   margin-bottom: 5rem;
   font-size: 1.05rem;
   gap: 5px;
-  background-color: #161b22;
+  background-color: #0d1117;
 }
 .pagination .page-num {
   cursor: pointer;
   padding: 8px 15px;
   border-radius: 3px;
   font-weight: 300px;
-  color: greenyellow;
+  color: #8b949e;
 }
 .pagination .page-num:hover {
   background-color: #61dafb;
@@ -66,6 +48,9 @@
 .cards {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #8b949e; */
 }
 .card {
   /* display: flex;
@@ -75,22 +60,25 @@
   flex-wrap: wrap; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   margin: 100px auto;
   width: 60%;
-  background-color: #80808091;
+  background-color: #161b22;
   margin: 1rem 1rem;
   padding: 1rem;
   max-width: 300px;
   border-radius: 10px;
+  color: #8b949e;
+  border: 1px solid #8b949e2a;
 }
-.card-info {
+/* .card-info {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-around;
+} */
 .card-name {
-  color: #39d353;
+  color: #39d353e1;
 }
 .card-image {
   border-radius: 50%;
