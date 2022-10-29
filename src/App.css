@@ -63,6 +63,10 @@
 .pagination .active {
   background-color: #61dafb;
 }
+.cards {
+  display: flex;
+  justify-content: center;
+}
 .card {
   /* display: flex;
   justify-content: center;
@@ -79,4 +83,16 @@
   margin: 1rem 1rem;
   padding: 1rem;
   max-width: 300px;
+  border-radius: 10px;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.card-name {
+  color: #39d353;
+}
+.card-image {
+  border-radius: 50%;
+  border: 1px solid red;
 }

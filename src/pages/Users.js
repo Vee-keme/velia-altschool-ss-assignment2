@@ -43,13 +43,15 @@ function Users() {
       return (
         <div className="cards">
           <div className="card">
-            <h2 className="card-name">{res.name.first}</h2>
-            <img
-              className="card-image"
-              key={index}
-              alt={res.name.first}
-              src={res.picture.medium}
-            />
+            <div className="card-info">
+              <h2 className="card-name">{res.name.first}</h2>
+              <img
+                className="card-image"
+                key={index}
+                alt={res.name.first}
+                src={res.picture.medium}
+              />
+            </div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
               ea?
@@ -67,23 +69,22 @@ function Users() {
       {useEffect(() => {
         fetchData();
       }, [])}
-      <>
-        {currentPageData}
-        <ReactPaginate
-          breakLabel="..."
-          nextLabel="next >"
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={3}
-          pageCount={pageCount}
-          previousLabel="< previous"
-          renderOnZeroPageCount={null}
-          containerClassName="pagination"
-          pageLinkClassName="page-num"
-          previousLinkClassName="page-num"
-          nextLinkClassName="page-num"
-          activeLinkClassName="active"
-        />
-      </>
+
+      {currentPageData}
+      <ReactPaginate
+        breakLabel="..."
+        nextLabel="next >"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={3}
+        pageCount={pageCount}
+        previousLabel="< previous"
+        renderOnZeroPageCount={null}
+        containerClassName="pagination"
+        pageLinkClassName="page-num"
+        previousLinkClassName="page-num"
+        nextLinkClassName="page-num"
+        activeLinkClassName="active"
+      />
     </div>
   );
 }
