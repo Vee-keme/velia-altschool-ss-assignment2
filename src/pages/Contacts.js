@@ -5,7 +5,7 @@ function Contacts() {
   return (
     <div className="Contacts">
       <h1>This is my contacts page</h1>
-      <>
+      <div>
         <nav>
           <ul>
             <li>
@@ -16,7 +16,7 @@ function Contacts() {
             </li>
           </ul>
         </nav>
-      </>
+      </div>
     </div>
   );
 }

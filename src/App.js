@@ -4,12 +4,18 @@ import "./App.css";
 import { Contacts } from "./pages/Contacts";
 import { Home } from "./pages/Home";
 import { Notfound } from "./pages/Notfound";
-// import Users from "./pages/Users";
+
 import { Socials } from "./pages/Socials";
 import { Physical } from "./pages/Physical";
+import { Fallback } from "./pages/Fallback";
+import { ErrorBoundary } from "react-error-boundary";
+import Loading from "./pages/Loading";
 const UsersLazyLoad = React.lazy(() => import("./pages/Users"));
 
 function App() {
+  const errorHandler = (error, errorInfo) => {
+    console.log("logging", error, errorInfo);
+  };
   return (
     <div className="App">
       <nav>
@@ -27,24 +33,26 @@ function App() {
         </ul>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/users"
-          element={
-            <React.Suspense fallback="LOADING......">
-              <UsersLazyLoad />
-            </React.Suspense>
-          }
-        />
-        <Route path="/contacts">
-          <Route index element={<Contacts />} />
-          <Route path="socials" element={<Socials />} />
-          <Route path="physical" element={<Physical />} />
-        </Route>
+      <ErrorBoundary FallbackComponent={Fallback} onError={errorHandler}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/users"
+            element={
+              <React.Suspense fallback={<Loading />}>
+                <UsersLazyLoad />
+              </React.Suspense>
+            }
+          />
+          <Route path="/contacts">
+            <Route index element={<Contacts />} />
+            <Route path="socials" element={<Socials />} />
+            <Route path="physical" element={<Physical />} />
+          </Route>
 
-        <Route path="*" element={<Notfound />} />
-      </Routes>
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </ErrorBoundary>
     </div>
   );
 }

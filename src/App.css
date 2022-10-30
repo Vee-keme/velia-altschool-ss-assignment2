@@ -5,7 +5,6 @@
 .App-nav-li {
   display: flex;
   justify-content: space-around;
-  /* background-color: #161b22; */
   background-color: #0d1117;
   padding: 2vh 2rem;
 }
@@ -25,11 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.05rem;
+  font-size: 1rem;
   gap: 5px;
   background-color: #0d1117;
   color: #8b949e;
   padding: 1.5rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .pagination .page-num {
@@ -91,4 +92,30 @@
 }
 .Home h1 {
   color: #39d353e1;
+}
+/* for loading component */
+.Loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+  background-color: #0d1117;
+}
+
+.Contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 93vh;
+  background-color: #0d1117;
+}
+.Contacts nav ul li {
+  list-style: none;
+  background-color: red;
+  margin: 1rem;
+}
+.Contacts nav ul li a {
+  text-decoration: none;
+  color: #8b949e;
 }
