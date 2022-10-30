@@ -1,4 +1,4 @@
-# ALTSCHOOL AFRICA SCHOOL OF ENGINEERING ASIGNMNET
+# ALTSCHOOL AFRICA SCHOOL OF ENGINEERING ASSIGNMNET
 
 ![ ALTSCHOOL LOGO](https://thealtschool.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-1.png)
 
@@ -15,6 +15,9 @@ This is my code repo for my Trial at solving the [Altschool School of Engineerin
 ## **Assignment Objectives**
 
 - Setup react-router, implement Nested routes, 404 page, and Error boundary. Set up client-side pagination using randomuser.me API in one of your routes called Users - you should show the prev, next, and navigation to individual pages 1, 2, 3, 4, 5 etc. Implement accessibility and disabled state and API loading states.
+
+
+
   > Below is the link to my solution on the assignment.
 
 ### **Solution**
