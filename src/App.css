@@ -86,12 +86,19 @@
 .Home {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   height: 94vh;
   align-items: center;
   background-color: #0d1117;
 }
 .Home h1 {
   color: #39d353e1;
+}
+.Home p {
+  color: #8b949e;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem;
 }
 /* for loading component */
 .Loading {
@@ -118,4 +125,53 @@
 .Contacts nav ul li a {
   text-decoration: none;
   color: #8b949e;
+}
+.Physical {
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 94vh;
+  width: 100%;
+}
+.Physical h1 {
+  color: #8b949e;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+form {
+  border: 1px solid #8b949e;
+  border-radius: 5px;
+  color: #8b949e;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+form > * {
+  padding: 1rem;
+}
+input,
+textarea {
+  background-color: #eee;
+}
+.Physical button {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.Physical button:disabled {
+  background-color: #8b949e;
+  color: #333;
+}
+.Physical button:enabled {
+  background-color: #39d353e1;
+  color: #111;
 }

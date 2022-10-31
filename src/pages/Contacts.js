@@ -9,10 +9,10 @@ function Contacts() {
         <nav>
           <ul>
             <li>
-              <Link to="socials">Socials</Link>{" "}
+              <Link to="socials">Visit my Socials</Link>{" "}
             </li>
             <li>
-              <Link to="physical">Physical info</Link>{" "}
+              <Link to="physical">Send Me An Email</Link>{" "}
             </li>
           </ul>
         </nav>
