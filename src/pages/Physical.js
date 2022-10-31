@@ -33,9 +33,10 @@ class Physical extends Component {
         <form onSubmit={this.handleSubmit}>
           <label>Email</label>
           <input
-            type="text"
+            type="email"
             value={this.state.email}
             onChange={this.handleEmailChange}
+            placeholder="username@mail.com"
             required
           />
 
@@ -44,6 +45,7 @@ class Physical extends Component {
             type="textarea"
             value={this.state.textarea}
             onChange={this.handleTextareaChange}
+            placeholder="What would you like to tell me?"
             required
           ></textarea>
 

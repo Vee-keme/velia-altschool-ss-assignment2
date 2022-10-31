@@ -35,9 +35,10 @@
 
 .pagination .page-num {
   cursor: pointer;
-  padding: 8px 15px;
+  padding: 0.5rem 0.93rem;
   border-radius: 3px;
   font-weight: 300px;
+  margin: 1rem;
 }
 .pagination .page-num:hover {
   background-color: #39d353e1;
@@ -147,6 +148,12 @@
 .Socials-links {
   margin-top: 3rem;
 }
+@media (max-width: 480px) {
+  .Socials-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .Socials-links a {
   text-decoration: none;
   background-color: #39d353e1;
@@ -156,7 +163,6 @@
   color: #333;
 }
 .Socials-links a i {
-  /* display: block; */
   margin-right: 0.5rem;
 }
 .Physical {

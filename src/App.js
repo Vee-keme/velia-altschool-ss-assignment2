@@ -7,7 +7,7 @@ import { Notfound } from "./pages/Notfound";
 
 import { Socials } from "./pages/Socials";
 import Physical from "./pages/Physical";
-import { Fallback } from "./pages/Fallback";
+import { Fallback } from "./pages/Components/Fallback";
 import { ErrorBoundary } from "react-error-boundary";
 import Loading from "./pages/Loading";
 const UsersLazyLoad = React.lazy(() => import("./pages/Users"));
