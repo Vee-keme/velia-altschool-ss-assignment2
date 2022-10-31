@@ -117,14 +117,47 @@
   height: 93vh;
   background-color: #0d1117;
 }
+.Contacts h1 {
+  color: #8b949e;
+}
 .Contacts nav ul li {
   list-style: none;
-  background-color: red;
+  background-color: #39d353e1;
   margin: 1rem;
+  padding: 1rem 1.4rem;
+  border-radius: 1rem;
 }
 .Contacts nav ul li a {
   text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.Socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1117;
+  height: 93vh;
+  flex-direction: column;
+}
+.Socials h1 {
   color: #8b949e;
+}
+.Socials-links {
+  margin-top: 3rem;
+}
+.Socials-links a {
+  text-decoration: none;
+  background-color: #39d353e1;
+  margin: 1rem;
+  padding: 1rem 1.4rem;
+  border-radius: 1rem;
+  color: #333;
+}
+.Socials-links a i {
+  /* display: block; */
+  margin-right: 0.5rem;
 }
 .Physical {
   background-color: #0d1117;

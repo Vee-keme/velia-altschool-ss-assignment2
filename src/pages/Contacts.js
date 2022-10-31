@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Contacts() {
   return (
     <div className="Contacts">
-      <h1>This is my contacts page</h1>
+      <h1>Reach Out to the Creator</h1>
       <div>
         <nav>
           <ul>
